@@ -7,7 +7,7 @@
 	.swiper-container
 		width: 100%
 		height: auto
-		margin-left: -30px
+		margin-left: auto
 		margin-right: auto
 		padding: 50px 35px
 	.swiper-slide
@@ -40,6 +40,13 @@
 				&:first-child
 					font-size: 20px
 					font-weight: 500
+			&:after
+				content: ''
+				position: absolute
+				top: -20px
+				left: 45%
+				border: 10px solid transparent
+				border-bottom: 10px solid $purple
 			&--top
 				display: none
 				position: absolute
@@ -63,12 +70,5 @@
 					bottom: -20px
 					border: 10px solid transparent
 					border-top: 10px solid $purple
-			&:after
-				content: ''
-				position: absolute
-				top: -20px
-				left: 45%
-				border: 10px solid transparent
-				border-bottom: 10px solid $purple
 	.swiper-container-android .swiper-slide, .swiper-wrapper
 		transform: none
