@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -30,3 +31,6 @@ nbproject
 _tmp
 node_modules
 bower_components
+=======
+node_modules
+>>>>>>> a4ac3f2d95322e6f186e17206d6174d373a14bca
