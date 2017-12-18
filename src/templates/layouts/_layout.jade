@@ -1,0 +1,39 @@
+include _mixins
+doctype html
+html
+  head
+    include _head
+
+  body
+    #menu.slideout-menu.slideout-menu-right
+      ul
+        li
+          a(href="collection.html") Коллекции
+        li
+          a(href="product.html") Товары
+        li
+          a(href="#") О нас
+        li
+          a(href="#") Контакты
+        li
+          .menu-close
+            span
+      .user
+        ul
+          li
+            a(href="shoppping.html") Корзина
+          li
+            a(href="#login-form" rel="modal:open") Войти
+    #panel.slideout-panel.slideout-panel-right
+      block header
+        include ../partials/_header
+      block content
+
+
+
+      block scripts
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+        script(src="js/slideout.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.js")
+        script(type="text/javascript" src="js/app.js")
