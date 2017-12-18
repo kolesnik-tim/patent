@@ -1,0 +1,74 @@
+@import "color.sass" 
+.trust
+	position: relative
+	h2
+		@include h2
+		padding-top: 40px
+	.swiper-container
+		width: 100%
+		height: auto
+		margin-left: -30px
+		margin-right: auto
+		padding: 50px 35px
+	.swiper-slide
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		width: 100px
+		img
+			position: relative
+			z-index: 9
+		&:hover
+			.swiper-slide__block
+				display: block
+				&--top
+					display: block
+		&__block
+			display: none
+			position: absolute
+			top: 125px
+			background: $purple
+			z-index: 10
+			border-radius: 4px
+			padding: 10px
+			width: 200px
+			p
+				font-size: 15px
+				color: $white
+				font-weight: 200
+				&:first-child
+					font-size: 20px
+					font-weight: 500
+			&--top
+				display: none
+				position: absolute
+				background: $purple
+				z-index: 10
+				border-radius: 4px
+				padding: 10px
+				width: 200px
+				bottom: 120px
+				p
+					font-size: 15px
+					color: $white
+					font-weight: 200
+					&:first-child
+						font-size: 20px
+						font-weight: 500
+				&:after
+					content: ''
+					position: absolute
+					left: 45%
+					bottom: -20px
+					border: 10px solid transparent
+					border-top: 10px solid $purple
+			&:after
+				content: ''
+				position: absolute
+				top: -20px
+				left: 45%
+				border: 10px solid transparent
+				border-bottom: 10px solid $purple
+	.swiper-container-android .swiper-slide, .swiper-wrapper
+		transform: none

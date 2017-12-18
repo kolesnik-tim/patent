@@ -1,0 +1,25 @@
+@import "color.sass" 
+.command
+	padding: 50px 0
+	h2
+		@include h2
+	&__block
+		margin-top: 40px
+		height: 400px
+		background-image: url("http://via.placeholder.com/300x300")
+		margin-left: 20px
+		position: relative
+		background-size: cover
+		&--padding
+			margin-right: 20px
+			margin-left: 0
+		&__name
+			position: absolute
+			width: 100%
+			bottom: 0
+			background: rgba(69, 39, 159, 0.6)
+			padding: 10px 0
+			p
+				font-size: 20px
+			span
+				font-size: 14px

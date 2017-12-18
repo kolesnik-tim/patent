@@ -1,0 +1,186 @@
+@import "color.sass" 
+.slideout-menu
+  position: fixed
+  z-index: 8
+  top: 0
+  bottom: 0
+  display: none 
+  overflow-y: scroll
+  width: 256px
+  min-height: 100vh
+  -webkit-overflow-scrolling: touch
+  background: #181a22
+  // хром, сафари
+  &::-webkit-scrollbar
+    width: 0
+  -ms-overflow-style: none
+  overflow: -moz-scrollbars-none
+.slideout-menu-right
+  right: 0
+  overflow-x: hidden
+  ul
+    list-style: none
+    padding-left: 10px
+    padding-top: 35px
+    position: relative
+  li
+    padding-top: 35px
+    padding-left: 40px
+  a
+    color: #cdcdcd
+    font-size: 20px
+    font-weight: 100
+    transition: all 0.3s
+  .user
+    ul
+      padding-top: 5px
+.slideout-menu-left
+  left: 0
+.slideout-panel
+  position: relative
+  z-index: 9
+  min-height: 100vh 
+  background-color: #fff
+  will-change: transform
+.slideout-open
+  overflow: hidden
+.slideout-open body,
+.slideout-open .slideout-panel
+  overflow: hidden
+.slideout-open .slideout-menu
+  display: block
+.panel:before 
+  content: ''
+  display: block
+  background-color: rgba(0,0,0,0)
+  transition: background-color 0.5s ease-in-out
+.panel-open:before 
+  content: ''
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  background-color: rgba(0,0,0,.5)
+  z-index: 999
+#btn
+  display: block
+  width: 36px
+  height: 20px
+  padding-top: 20px
+  cursor: pointer
+  span
+    &:after, &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: -10px
+    &:after
+      top: 10px
+      width: 36px
+      height: 5px
+      background-color: $gray
+      transition: all 0.3s
+      backface-visibility: hidden
+    position: relative
+    display: block
+    width: 36px
+    height: 5px
+    background-color: $gray
+    transition: all 0.3s
+    backface-visibility: hidden
+    &:before
+      width: 36px
+      height: 5px
+      background-color: $gray
+      transition: all 0.3s
+      backface-visibility: hidden
+  &.on span
+    background-color: transparent
+    &:before
+      transform: rotate(45deg) translate(6px, 5px)
+    &:after
+      transform: rotate(-45deg) translate(9px, -8px)
+#btn.on
+  display: none
+.menu-close
+  position: absolute
+  top: 20px
+  right: 10%
+  width: 40px
+  height: 40px
+  cursor: pointer
+  span
+    background-color: transparent
+    position: relative
+    top: 20px
+    &:after, &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: -10px
+    &:after
+      content: ''
+      top: 10px
+      width: 36px
+      height: 5px
+      background-color: $gray
+      transition: all 0.3s
+      backface-visibility: hidden
+      border-radius: 2px
+      transform: rotate(-45deg) translate(9px, -8px)
+    &:before
+      content: ''
+      transform: rotate(45deg) translate(6px, 5px)
+      width: 36px
+      height: 5px
+      background-color: $gray
+      transition: all 0.3s
+      backface-visibility: hidden
+      border-radius: 2px
+.top-line-anchor
+  display: inline-block
+  @media(max-width: 767px)
+    left: 20px
+.top-line-anchor
+  display: none
+  position: absolute
+  left: 10px
+  top: 10px
+//   @media(max-width: 767px)
+//     display: block
+// @media(max-width: 767px)
+//   .header nav
+//     display: none
+
+
+
+
+
+
+
+
+
+.header
+  position: absolute
+  top: 0
+  width: 100%
+  &__toolbar
+    padding: 15px 0
+    a
+      display: block
+      color: $white
+  &__content
+    background: $white
+    padding: 10px 0
+    a
+      color: $black
+    &__tel
+      a
+        background: $purple
+        display: inline-block
+        padding: 10px 23px
+        span
+          color: $white
+          font-size: 27px
+        p
+          color: $white
