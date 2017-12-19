@@ -41,17 +41,6 @@ $(function() {
     slideout.close();
   });
 
-  function close(eve) {
-    eve.preventDefault();
-    slideout.close();
-  }
-  slideout.on('open', function() { 
-    $('#btn').addClass('on');
-  });
-
-  slideout.on('close', function() { 
-    $('#btn').removeClass('on');
-  });
   // Сайт затемняет
   function close(eve) {
     eve.preventDefault();
