@@ -20,7 +20,8 @@
 		padding-bottom: 110px
 		@media(max-width: 1024px)
 			margin: 25px auto
-			max-width: 60%
+			max-width: 80%
+			min-height: 10px
 		h4
 			padding: 15px 0
 			width: 100%
@@ -31,8 +32,12 @@
 			justify-content: center
 			display: flex
 			color: $white
+			@media(max-width: 767px)
+				font-size: 25px
 		ul
 			padding-top: 20px
+			@media(max-width: 767px)
+				padding: 30px 15px
 		li
 			padding-left: 45px
 			padding-right: 26px
@@ -42,6 +47,10 @@
 			font-weight: 300
 			color: $gray
 			position: relative
+			@media(max-width: 767px)
+				font-size: 20px
+				img
+					height: 14px
 			img
 				position: absolute
 				left: 18px

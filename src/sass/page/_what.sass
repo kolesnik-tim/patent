@@ -13,12 +13,19 @@
     display: inline-block
     position: relative
     font-size: 14px
+    p
+      display: inline-block
+      @media(max-width: 767px)
+        display: block
     img
       position: absolute
       left: -20px
-      bottom: -2px
+      top: 2px
       width: 13px
       height: 16px
+      @media(max-width: 767px)
+        left: 45px
+        top: -2px
     &:hover
       color: $purple
       border-color: $purple

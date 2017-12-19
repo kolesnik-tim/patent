@@ -1,7 +1,7 @@
 $(function() {
 
 
-
+// Слайдер
   var swiper = new Swiper('.swiper-container', {
   	slidesPerView: 5,
     slidesPerColumn: 2,
@@ -18,11 +18,6 @@ $(function() {
     	900: {
 	      slidesPerView: 3,
 	      spaceBetween: 10
-    	},
-    	767: {
-	      slidesPerView: 2,
-	      spaceBetween: 34,
-	      slidesPerColumn: 2
     	},
   	}
   });
