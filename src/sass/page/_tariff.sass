@@ -1,20 +1,31 @@
 @import "color.sass" 
 .tariff
 	padding-top: 30px
+	padding-bottom: 110px
+	@media(max-width: 1024px)
+		padding-bottom: 40px
 	h2
 		@include h2
-		padding-bottom: 30px
+		padding-bottom: 40px
+		@media(max-width: 1024px)
+			padding-bottom: 20px
 	.col-xs-3
 		margin: 0 20px
 	&__block
 		border: 2px solid $purple
 		border-radius: 4px
-		min-height: 350px
+		min-height: 470px
+		max-width: 280px
 		position: relative
 		padding-bottom: 110px
+		@media(max-width: 1024px)
+			margin: 25px auto
+			max-width: 60%
 		h4
 			padding: 15px 0
 			width: 100%
+			font-size: 20px
+			font-weight: 500
 			background: $purple
 			margin: 0 auto
 			justify-content: center
@@ -23,9 +34,20 @@
 		ul
 			padding-top: 20px
 		li
-			padding-left: 50px
-			line-height: 30px
-			font-size: 15px
+			padding-left: 45px
+			padding-right: 26px
+			padding-bottom: 20px
+			line-height: 20px
+			font-size: 14px
+			font-weight: 300
+			color: $gray
+			position: relative
+			img
+				position: absolute
+				left: 18px
+				top: 4px
+				width: 16px
+				height: 11px
 		&__bottom
 			position: absolute
 			bottom: 0
@@ -35,8 +57,19 @@
 			span
 				display: block
 				padding-bottom: 20px
+				font-size: 16px
+				font-weight: 500
 			a
 				display: inline-block
-				padding: 10px 43px
+				padding: 10px 0
+				font-size: 16px
+				width: 90%
+				font-weight: 200
+				border-radius: 4px
+				border: 2px solid $purple
 				background: $purple
 				color: $white
+				&:hover
+					background: none
+					color: $purple
+					

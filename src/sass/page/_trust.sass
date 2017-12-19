@@ -1,21 +1,24 @@
 @import "color.sass" 
 .trust
 	position: relative
+	background: #fafafa
 	h2
 		@include h2
-		padding-top: 40px
+		padding-top: 80px
 	.swiper-container
 		width: 100%
 		height: auto
 		margin-left: auto
 		margin-right: auto
 		padding: 50px 35px
+		margin-bottom: 50px
 	.swiper-slide
 		display: flex
 		justify-content: center
 		align-items: center
 		position: relative
-		width: 100px
+		@media(max-width: 767px)
+			width: 200px !important
 		img
 			position: relative
 			z-index: 9
@@ -24,6 +27,11 @@
 				display: block
 				&--top
 					display: block
+			@media(max-width: 767px)
+				.swiper-slide__block
+					display: none
+					&--top
+						display: none
 		&__block
 			display: none
 			position: absolute
@@ -31,15 +39,17 @@
 			background: $purple
 			z-index: 10
 			border-radius: 4px
-			padding: 10px
-			width: 200px
+			padding: 15px
+			width: 230px
 			p
-				font-size: 15px
+				font-size: 14px
+				line-height: 18px
 				color: $white
 				font-weight: 200
 				&:first-child
 					font-size: 20px
 					font-weight: 500
+					line-height: 35px
 			&:after
 				content: ''
 				position: absolute
@@ -47,28 +57,66 @@
 				left: 45%
 				border: 10px solid transparent
 				border-bottom: 10px solid $purple
-			&--top
-				display: none
+		&__block--top
+			display: none
+			position: absolute
+			background: $purple
+			z-index: 10
+			border-radius: 4px
+			padding: 15px
+			width: 230px
+			bottom: 120px
+			p
+				font-size: 14px
+				line-height: 18px
+				color: $white
+				font-weight: 200
+				&:first-child
+					font-size: 20px
+					font-weight: 500
+					line-height: 30px
+			&:after
+				content: ''
 				position: absolute
-				background: $purple
-				z-index: 10
-				border-radius: 4px
-				padding: 10px
-				width: 200px
-				bottom: 120px
-				p
-					font-size: 15px
-					color: $white
-					font-weight: 200
-					&:first-child
-						font-size: 20px
-						font-weight: 500
-				&:after
-					content: ''
-					position: absolute
-					left: 45%
-					bottom: -20px
-					border: 10px solid transparent
-					border-top: 10px solid $purple
+				left: 45%
+				bottom: -20px
+				border: 10px solid transparent
+				border-top: 10px solid $purple
 	.swiper-container-android .swiper-slide, .swiper-wrapper
 		transform: none
+	.swiper-button-next
+		background: none
+		right: 60px
+		top: 57%
+		i
+			transform: rotate(180deg)
+			display: inline-block
+			font-size: 60px
+			font-weight: 100
+			color: $gray
+		@media(max-width: 1024px)
+			display: none
+	.swiper-button-prev
+		background: none
+		left: 30px
+		top: 57%
+		i
+			display: inline-block
+			font-size: 60px
+			font-weight: 100
+			color: $gray
+		@media(max-width: 1024px)
+			display: none
+
+
+
+
+
+
+
+
+
+
+
+
+

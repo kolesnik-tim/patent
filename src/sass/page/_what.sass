@@ -1,13 +1,45 @@
 @import "color.sass" 
 .what
-  padding: 100px
+  padding: 100px 0
+  @media(max-width: 1024px)
+    padding: 50px 0 0
   h2
     @include h2
-    padding-bottom: 20px
+    padding-bottom: 25px
   a
     color: $gray
-    border-bottom: 1px solid $gray
-    margin-bottom: 50px
+    border-bottom: 2px solid $gray
+    margin-bottom: 60px
     display: inline-block
+    position: relative
+    font-size: 14px
+    img
+      position: absolute
+      left: -20px
+      bottom: -2px
+      width: 13px
+      height: 16px
+    &:hover
+      color: $purple
+      border-color: $purple
   &__block
-    padding-bottom: 30px
+    padding-bottom: 50px
+    @media(max-width: 767px)
+      max-width: 300px
+      margin: 0 auto
+    h4
+      font-size: 20px
+      font-weight: 500
+      color: $gray
+      padding-bottom: 15px
+    p
+      font-size: 14px
+      font-weight: 200
+      color: $gray
+    img
+      max-width: 40px
+      max-height: 40px
+      position: relative
+      left: 15px
+    &--icon
+      top: 15px

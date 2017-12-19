@@ -1,17 +1,47 @@
 @import "color.sass" 
 .footer
 	background: #333333
-	padding: 10px 0
+	padding: 20px 0
 	p
 		color: $white
+		font-size: 12px
+		font-weight: 200
+		letter-spacing: 1px
 	a
 		color: $white
 		border-bottom: 1px solid $white
+		font-size: 12px
+		font-weight: 200
+		letter-spacing: 1px
+		display: inline-block
+		&:hover
+			border-bottom: 1px solid $purple
+		@media(max-width: 767px)
+			margin-bottom: 25px
 	&__social
 		a
-			width: 25px
-			height: 25px
-			background: $gray
 			display: inline-block
-			border-radius: 160px
 			border: none
+			width: 33px
+			height: 33px
+			border-radius: 60px
+			background: #5c5c5c
+			position: relative
+			i
+				font-size: 20px
+				position: absolute
+				left: 6px
+				top: 6px
+			.icon-vk
+				top: 7px
+			.icon-twitter
+				left: 7px
+				top: 7px
+			&:hover
+				color: $purple
+				background: $white
+			@media(max-width: 767px)
+				margin-right: 25px
+				margin-top: 5px
+				&:last-child
+					margin: 0

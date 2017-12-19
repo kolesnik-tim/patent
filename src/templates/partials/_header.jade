@@ -2,18 +2,20 @@ header.header
 	.header__toolbar
 		.container
 			.row.end-xs
-				.col-xs-3.start-xs
-					a(href="#") ул. Смотричкого, 154, офс 24
-				.col-xs-2
-					a(href="mailto:patent-lab@info.com") patent-lab@info.com
-				.col-xs-2
-					a(href="tel:7(555)4804548") 7(555)480-45-48
+				.col-md-6.col-sm-8
+					.header__toolbar__content.flex.between-xs
+						a(href="#") ул. Смотричкого, 154, офс 24
+							i.icon-PinMini
+						a(href="mailto:patent-lab@info.com") patent-lab@info.com
+							i.icon-Mail
+						a(href="tel:7(555)4804548") 7(555)480-45-48
+							i.icon-Phone
 	.header__content
 		.container
 			.row.middle-xs
-				.col-xs-3
-					img(src="http://via.placeholder.com/250x70", alt="")
-				.col-xs-6
+				.col-md-3.col-xs-6
+					img(src="img/logo.svg", alt="")
+				.col-md-6
 					nav
 						ul.flex.around-xs
 							li
@@ -28,10 +30,10 @@ header.header
 								a(href="#") Команда
 							li
 								a(href="#") Контакты
-				.col-xs-3.center-xs
+				.col-md-3.end-xs.col-xs-6
 					.header__content__tel
 						a(href="#")
-							span 8-800-000-00-00
+							span 8-800-340-30-30
 							p Заказать обратный звонок
 
 					

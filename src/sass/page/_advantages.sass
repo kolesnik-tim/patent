@@ -2,16 +2,18 @@
 .advantages
 	h2
 		@include h2
-		padding-top: 40px
+		padding-top: 70px
 	ul
-		padding-bottom: 60px
-		padding-top: 30px
+		padding-bottom: 45px
+		padding-top: 35px
+		@media(max-width: 767px)
+			padding: 35px 20px 45px 20px
 	li
 		position: relative
-		font-size: 15px
+		font-size: 16px
 		line-height: 30px
-		padding-left: 50px
-		padding-right: 30px
+		padding-left: 30px
+		padding-right: 20px
 		color: $gray
 		span
 			width: 6px
@@ -20,12 +22,16 @@
 			background: $purple
 			border-radius: 160px
 			position: absolute
-			left: 30px
-			top: 13px
+			left: 15px
+			top: 11px
 	&__img
 		width: 100%
 		height: 100%
 		background-size: cover
-		background-image: url("http://via.placeholder.com/150x150")
-	.col-xs-6
+		background-image: url("../img/advantages-1.png")
+		@media(max-width: 767px)
+			height: 460px
+		&--img
+			background-image: url("../img/advantages-2.png")
+	.col-sm-6
 		padding: 0

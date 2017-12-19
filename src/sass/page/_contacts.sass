@@ -1,1 +1,46 @@
 @import "color.sass" 
+.contacts
+	position: relative
+	iframe
+		position: relative
+		top: 5px
+		@media(max-width: 767px)
+			top: 10px
+	&__block
+		position: absolute
+		right: 0
+		top: 5px
+		height: 98.8%
+		width: 35%
+		background: rgba(0, 0, 0, 0.7)
+		padding: 40px
+		@media(max-width: 767px)
+			position: relative
+			width: 100%
+		h2
+			@include h2
+			color: $white
+			padding-bottom: 30px
+		p
+			font-size: 20px
+			font-weight: 300
+			color: $white
+			padding-bottom: 10px
+			padding-left: 40px
+			position: relative
+			i
+				position: absolute
+				left: 0
+				top: -4px
+				font-size: 20px
+			.icon-PinMini
+				font-size: 25px
+				top: -6px
+		a
+			color: $white
+			font-size: 14px
+			font-weight: 200
+			padding-bottom: 25px
+			display: inline-block
+			padding-left: 40px
+

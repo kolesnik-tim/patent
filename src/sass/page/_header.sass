@@ -166,21 +166,69 @@
   width: 100%
   &__toolbar
     padding: 15px 0
+    @media(max-width: 767px)
+      display: none
     a
-      display: block
       color: $white
+      font-size: 12px
+      font-weight: 200
+      position: relative
+      padding-left: 25px
+      i
+        position: absolute
+        left: 0
+        top: -3px
+        font-size: 14px
+        color: rgba(255, 255, 255, 0.6)
+      .icon-Mail
+        left: -4px
   &__content
     background: $white
     padding: 10px 0
+    @media(max-width: 767px)
+      padding: 20px 20px
+    nav
+      @media(max-width: 1024px)
+        display: none
+    img
+      @media(max-width: 767px)
+        height: 60px
     a
       color: $black
+      font-size: 16px
+      font-family: 'Muller'
+      font-weight: 400
+      &:hover
+        color: $purple
+        border-bottom: 1px solid $purple
     &__tel
       a
         background: $purple
         display: inline-block
-        padding: 10px 23px
+        padding: 16px 40px
+        border: 2px solid $purple
+        border-radius: 4px
+        color: $white
+        @media(max-width: 767px)
+          border: 2px solid $gray
+          background: none
+          color: $gray
         span
-          color: $white
-          font-size: 27px
+          font-size: 16px
+          font-family: 'Muller'
+          font-weight: 500
+          line-height: 22px
         p
           color: $white
+          font-size: 12px
+          font-family: 'Muller'
+          font-weight: 100
+          @media(max-width: 767px)
+            display: none
+        &:hover
+          background: none
+          border: 2px solid $purple
+          span
+            color: $purple
+          p
+            color: $purple
