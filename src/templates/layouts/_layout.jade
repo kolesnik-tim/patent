@@ -25,10 +25,28 @@ html
       block header
         include ../partials/_header
       block content
-      
+
       block footer
         include ../partials/_footer
-
+    .form.flex.center-xs.middle-xs
+      .form__block.flex.center-xs
+        h4 Оставь заявку
+        p На регистрацию товарного знака
+        form
+          input(type="text" placeholder="Ваше имя" required autocomplete="off" name="name")
+          input(type="tel" required autocomplete="off" placeholder="Email / Телефон" name="phone")
+          input(type="text" placeholder="Название торговой марки" required autocomplete="off" name="mark")
+          .form__block__file
+            input(type="file" id="file" placeholder="Прикрепить логотип")
+            label(for="file") Прикрепить логотип
+              i.icon-Dwonload
+          input(type="submit" value="Отправить заявку")
+          .form__block__checkbox.flex.start-xs
+            input(type="checkbox" id="checkbox")
+            label(for="checkbox") Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями 
+              a(href="#") и политикой конфиденциальности
+      .form__close
+        span
     block scripts
       script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js")

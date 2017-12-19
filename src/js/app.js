@@ -51,7 +51,14 @@ $(function() {
       this.panel.classList.remove('panel-open');
       this.panel.removeEventListener('click', close);
     });
+  // форма
+  $('.btn').on('click', function() {
+    $('.slideout-panel').addClass('is-active');
+  });
 
+  $('.form__close').on('click', function() {
+    $('.slideout-panel').removeClass('is-active');
+  });
 
 
 

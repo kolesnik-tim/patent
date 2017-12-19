@@ -1,0 +1,147 @@
+@import "color.sass" 
+.form
+	position: absolute
+	left: 0
+	top: 0
+	background: $white
+	width: 100%
+	height: 100vh
+	z-index: 1
+	&__block
+		width: 320px
+		position: absolute
+		flex-direction: column
+		h4
+			font-size: 42px
+			color: #555555
+			padding-bottom: 10px
+			padding-top: 20px
+		p
+			font-size: 18px
+			color: $gray
+			font-weight: 300
+			padding-bottom: 40px
+		input
+			width: 100%
+			height: 50px
+			background: #f6f6f6
+			margin-bottom: 20px
+			font-size: 16px
+			font-weight: 200
+			padding: 15px 20px
+			border-radius: 4px
+			box-sizing: border-box
+		input[type='submit']
+			background: $purple
+			color: $white
+			border: 2px solid $purple
+			transition: all 0.3s
+			&:hover
+				background: none
+				color: $purple
+		&__file
+			height: 50px
+			position: relative
+			border-radius: 4px
+			box-sizing: border-box
+			background: #f6f6f6
+			margin-bottom: 40px
+			input
+				visibility: hidden
+			label
+				position: absolute
+				left: 0
+				top: 0
+				padding: 15px 20px
+				font-size: 16px
+				font-weight: 300
+				color: #666666
+				width: 100%
+				height: 100%
+				display: flex
+				cursor: pointer
+				i
+					position: absolute
+					right: 20px
+					top: 17px
+					display: inline-block
+					width: 20px
+					height: 20px
+					&:hover
+						color: $purple
+		&__checkbox
+			flex-direction: column
+			padding-bottom: 40px
+			input
+				display: none
+				& + label
+					font-size: 12px
+					font-weight: 300
+					padding-left: 35px
+					position: relative
+					color: $gray
+					&:before
+						content: ''
+						display: inline-block
+						position: absolute
+						left: 0
+						top: 0
+						width: 20px
+						height: 20px
+						border: 2px solid $gray
+					a
+						color: $gray
+					&:hover
+						a
+							border-bottom: 1px solid $purple
+							color: $purple
+				&:checked + label:before
+					background: $purple
+					content: '\e905'
+					color: $white
+					padding-left: 3px
+					padding-top: 2px
+					font-family: "icomoon"
+	&__close
+		position: absolute
+		top: 20px
+		right: 17px
+		width: 40px
+		height: 40px
+		cursor: pointer
+		span
+			background-color: transparent
+			position: relative
+			top: 20px
+			width: 50px
+			height: 50px
+			left: -20px
+			&:after, &:before
+				content: ""
+				position: absolute
+				left: 0
+				top: -10px
+			&:after
+				content: ''
+				top: 10px
+				width: 36px
+				height: 2px
+				background-color: $gray
+				transition: all 0.3s
+				backface-visibility: hidden
+				border-radius: 2px
+				transform: rotate(-45deg) translate(9px, -8px)
+			&:before
+				content: ''
+				transform: rotate(45deg) translate(6px, 5px)
+				width: 36px
+				height: 2px
+				background-color: $gray
+				transition: all 0.3s
+				backface-visibility: hidden
+				border-radius: 2px
+
+
+
+
+

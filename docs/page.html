@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Patent</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" id="viewport" content="width=450, minimum-scale=0.3, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
+    <meta name="viewport" id="viewport" content="width=450, minimum-scale=0.3, maximum-scale=3, user-scalable=no, target-densitydpi=device-dpi">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/flexboxgrid.min.css">
@@ -55,7 +55,7 @@
                 </nav>
               </div>
               <div class="col-md-3 end-xs col-xs-6">
-                <div class="header__content__tel"><a href="#"><span>8-800-340-30-30</span><p>Заказать обратный звонок</p></a></div>
+                <div class="header__content__tel"><a href="#" class="btn"><span>8-800-340-30-30</span><p>Заказать обратный звонок</p></a></div>
               </div>
             </div>
           </div>
@@ -380,8 +380,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"><i class="icon-arrows"></i></div>
-          <div class="swiper-button-prev"><i class="icon-arrows"></i></div>
+          <div class="swiper-button-next"><img src="img/arrows.png" alt=""></div>
+          <div class="swiper-button-prev"><img src="img/arrows.png" alt=""></div>
         </div>
       </section>
       <section class="command">
@@ -431,6 +431,18 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="form flex center-xs middle-xs">
+      <div class="form__block flex center-xs">
+        <h4>Оставь заявку</h4>
+        <p>На регистрацию товарного знака</p>
+        <form><input type="text" placeholder="Ваше имя" required autocomplete="off" name="name"><input type="tel" required autocomplete="off" placeholder="Email / Телефон" name="phone"><input type="text" placeholder="Название торговой марки" required autocomplete="off"
+            name="mark">
+          <div class="form__block__file"><input type="file" id="file" placeholder="Прикрепить логотип"><label for="file">Прикрепить логотип<i class="icon-Dwonload"></i></label></div><input type="submit" value="Отправить заявку">
+          <div class="form__block__checkbox flex start-xs"><input type="checkbox" id="checkbox"><label for="checkbox">Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями <a href="#">и политикой конфиденциальности</a></label></div>
+        </form>
+      </div>
+      <div class="form__close"><span></span></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>

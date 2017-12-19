@@ -27,7 +27,7 @@
         "code": 59653
       },
       "setIdx": 0,
-      "setId": 10,
+      "setId": 1,
       "iconIdx": 0
     },
     {
@@ -60,9 +60,9 @@
         "prevSize": 32,
         "code": 59648
       },
-      "setIdx": 2,
-      "setId": 8,
-      "iconIdx": 0
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -92,9 +92,9 @@
         "prevSize": 32,
         "code": 59651
       },
-      "setIdx": 4,
-      "setId": 6,
-      "iconIdx": 0
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -121,9 +121,9 @@
         "prevSize": 32,
         "code": 59649
       },
-      "setIdx": 5,
-      "setId": 5,
-      "iconIdx": 0
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -164,9 +164,9 @@
         "prevSize": 32,
         "code": 59657
       },
-      "setIdx": 10,
-      "setId": 0,
-      "iconIdx": 3
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -206,9 +206,9 @@
         "prevSize": 32,
         "code": 59658
       },
-      "setIdx": 10,
-      "setId": 0,
-      "iconIdx": 4
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -247,9 +247,9 @@
         "prevSize": 32,
         "code": 59659
       },
-      "setIdx": 10,
-      "setId": 0,
-      "iconIdx": 5
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -290,9 +290,9 @@
         "prevSize": 32,
         "code": 59660
       },
-      "setIdx": 10,
-      "setId": 0,
-      "iconIdx": 6
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -315,9 +315,9 @@
         "code": 59650,
         "name": "vk"
       },
-      "setIdx": 8,
-      "setId": 2,
-      "iconIdx": 352
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -340,9 +340,9 @@
         "code": 59652,
         "name": "twitter"
       },
-      "setIdx": 8,
-      "setId": 2,
-      "iconIdx": 380
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 9
     }
   ],
   "height": 1024,
