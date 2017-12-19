@@ -27,6 +27,8 @@ $(function() {
   	}
   });
 
+
+
   //Мобильная менюшка
   var slideout = new Slideout({
     'panel': document.getElementById('panel'),
@@ -34,19 +36,15 @@ $(function() {
     'padding': 256,
     'tolerance': 70,
   });
-  document.querySelector('.menu-open').addEventListener('click', function() {
-    slideout.open();
-  });
-  document.querySelector('.menu-close').addEventListener('click', function() {
-    slideout.close();
-  });
 
-  // Сайт затемняет
+
   function close(eve) {
     eve.preventDefault();
     slideout.close();
   }
-
+  $('.menu-close').on('click', function() {
+    slideout.close();
+  });
   slideout
     .on('beforeopen', function() {
       this.panel.classList.add('panel-open');
@@ -63,8 +61,12 @@ $(function() {
 
 
 
-
-
-
+  
 });
+
+
+
+
+
+
 
