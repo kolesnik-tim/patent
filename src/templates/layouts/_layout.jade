@@ -6,22 +6,22 @@ html
 
   body
     #menu.slideout-menu.slideout-menu-right
-      ul
+      ul.menu
         li
-          a(href="#") Приимущества
+          a(href="#ex1") Приимущества
         li
-          a(href="#") Партнеры
+          a(href="#ex2") Партнеры
         li
-          a(href="#") О нас
+          a(href="#ex3") О нас
         li
-          a(href="#") Отзывы
+          a(href="#ex4") Отзывы
         li
-          a(href="#") Команда
+          a(href="#ex5") Команда
         li
-          a(href="#") Контакты
+          a(href="#ex6") Контакты
       .menu-close
         span
-    #panel.slideout-panel.slideout-panel-right
+    #panel.slideout-panel.slideout-panel-right.content
       block header
         include ../partials/_header
       block content
@@ -37,7 +37,7 @@ html
           input(type="tel" required autocomplete="off" placeholder="Email / Телефон" name="phone")
           input(type="text" placeholder="Название торговой марки" required autocomplete="off" name="mark")
           .form__block__file
-            input(type="file" id="file" placeholder="Прикрепить логотип")
+            input(type="file" name="description" id="file" placeholder="Прикрепить логотип")
             label(for="file") Прикрепить логотип
               i.icon-Dwonload
           input(type="submit" value="Отправить заявку")

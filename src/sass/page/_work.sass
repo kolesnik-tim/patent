@@ -1,0 +1,101 @@
+@import "color.sass" 
+.work
+	padding: 80px 0 40px
+	@media(max-width: 1024px)
+		padding-bottom: 0
+	h2
+		@include h2
+		padding-bottom: 40px
+	&__mobile
+		display: none
+		@media(max-width: 1024px)
+			display: block
+		&--1
+			left: -22px !important
+		span
+			font-size: 14px
+			font-weight: 300
+			color: $gray
+			display: inline-block
+			padding-left: 30px
+			padding-bottom: 45px
+			position: relative
+			&:before
+				content: ''
+				background: $purple
+				height: 30px
+				border-radius: 4px
+				transform: skew(20deg)
+				width: 35px
+				position: absolute
+				left: -35px
+				top: -5px
+			p
+				position: absolute
+				top: 0
+				left: -23px
+				color: $white
+				font-size: 18px
+				font-weight: 300
+	&__text
+		@media(max-width: 1024px)
+			display: none
+		p
+			font-size: 14px
+			font-weight: 300
+			color: $gray
+			padding-bottom: 40px
+		&--padding
+			margin-left: -30px
+		&--padding1
+			margin-right: -32px
+	&__stage
+		padding: 100px 60px 130px
+		@media(max-width: 1024px)
+			display: none
+		&__content
+			position: relative
+			&--border
+				p
+					top: 87px !important
+					&:before
+						left: 103% !important
+			&__block
+				background: $purple
+				width: 115px
+				height: 30px
+				transform: skew(30deg)
+				border-radius: 4px
+			span
+				position: relative
+				top: -24px
+				padding-left: 30px
+				color: $white
+				font-size: 18px
+				font-weight: 300
+			i
+				font-size: 30px
+				position: absolute
+				right: -56px
+				top: -8px
+				color: $purple
+			p
+				position: absolute
+				left: 10px
+				top: -59px
+				padding: 0
+				transform: rotate(90deg)
+				display: inline-block
+				width: 100px
+				height: 2px
+				border-bottom: 2px dashed #646464
+				&:before
+					content: ''
+					position: absolute
+					top: -2px
+					left: -9px
+					display: inline-block
+					width: 6px
+					height: 6px
+					background: #646464
+					border-radius: 90px

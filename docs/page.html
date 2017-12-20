@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <title>Patent</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" id="viewport" content="width=450, minimum-scale=0.3, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
+    <meta name="viewport" id="viewport" content="width=450, minimum-scale=0.3, maximum-scale=3, user-scalable=no, target-densitydpi=device-dpi">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.min.css">
@@ -17,17 +16,17 @@
 
   <body>
     <div id="menu" class="slideout-menu slideout-menu-right">
-      <ul>
-        <li><a href="#">Приимущества</a></li>
-        <li><a href="#">Партнеры</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Команда</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="menu">
+        <li><a href="#ex1">Приимущества</a></li>
+        <li><a href="#ex2">Партнеры</a></li>
+        <li><a href="#ex3">О нас</a></li>
+        <li><a href="#ex4">Отзывы</a></li>
+        <li><a href="#ex5">Команда</a></li>
+        <li><a href="#ex6">Контакты</a></li>
       </ul>
       <div class="menu-close"><span></span></div>
     </div>
-    <div id="panel" class="slideout-panel slideout-panel-right">
+    <div id="panel" class="slideout-panel slideout-panel-right content">
       <header class="header">
         <div class="header__toolbar">
           <div class="container">
@@ -43,14 +42,14 @@
             <div class="row middle-xs">
               <div class="col-md-3 col-xs-6"><img src="img/logo.svg" alt=""></div>
               <div class="col-md-6">
-                <nav>
+                <nav class="menu">
                   <ul class="flex around-xs">
-                    <li><a href="#">Приимущества</a></li>
-                    <li><a href="#">Партнеры</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Команда</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#ex1">Приимущества</a></li>
+                    <li><a href="#ex2">Партнеры</a></li>
+                    <li><a href="#ex3">О нас</a></li>
+                    <li><a href="#ex4">Отзывы</a></li>
+                    <li><a href="#ex5">Команда</a></li>
+                    <li><a href="#ex6">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -72,23 +71,21 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section id="ex1" class="advantages">
         <div class="row">
           <div class="col-sm-6 col-xs-12">
-            <div class="container">
-              <h2 class="flex center-xs">Наши преимущества</h2>
-              <ul>
-                <li>Бесплатная консультация от патентного эксперта.<span></span></li>
-                <li>Бесплатный патентный поиск и рекомендации по доработке товарного знака.<span></span></li>
-                <li>Регистрация комбинированных и нетрадиционных товарных знаков.<span></span></li>
-                <li>Регистрация общеизвестных товарных знаков. <span></span></li>
-                <li>Фиксированная цена на весь год обслуживания, без накруток и навязывания услуг.<span></span></li>
-                <li>Подача заявки на регистрацию в течение 48 часов с даты заключения договора.<span></span></li>
-                <li> Услуги дизайнера по разработке логотипов.<span></span></li>
-                <li> Представительство в Роспатенте в ходе всей процедуры регистрации.<span></span></li>
-                <li>Постоянная связь по телефону, электронной почте, мессенджерам…<span></span></li>
-              </ul>
-            </div>
+            <h2 class="flex center-xs">Наши преимущества</h2>
+            <ul>
+              <li>Бесплатная консультация от патентного эксперта.<span></span></li>
+              <li>Бесплатный патентный поиск и рекомендации по доработке товарного знака.<span></span></li>
+              <li>Регистрация комбинированных и нетрадиционных товарных знаков.<span></span></li>
+              <li>Регистрация общеизвестных товарных знаков. <span></span></li>
+              <li>Фиксированная цена на весь год обслуживания, без накруток и навязывания услуг.<span></span></li>
+              <li>Подача заявки на регистрацию в течение 48 часов с даты заключения договора.<span></span></li>
+              <li> Услуги дизайнера по разработке логотипов.<span></span></li>
+              <li> Представительство в Роспатенте в ходе всей процедуры регистрации.<span></span></li>
+              <li>Постоянная связь по телефону, электронной почте, мессенджерам…<span></span></li>
+            </ul>
           </div>
           <div class="col-sm-6 col-xs-12">
             <div class="advantages__img"></div>
@@ -99,16 +96,14 @@
             <div class="advantages__img advantages__img--img"></div>
           </div>
           <div class="col-sm-6 col-xs-12">
-            <div class="container">
-              <h2 class="flex center-xs">Наши компетентности</h2>
-              <ul>
-                <li>Представительство в Палате по патентным спорам и арбитражных судах на всей территории РФ.<span></span></li>
-                <li>Разработка франчайзинговых и налоговых схем.<span></span></li>
-                <li>Лицензирование программного обеспечения. <span></span></li>
-                <li>Разработка лицензионных договоров и договоров об отчуждении исключительных прав. <span></span></li>
-                <li>Защита прав писателей, художников, музыкантов, дизайнеров, видеоблогеров и других контентмейкеров, авторов и исполнителей.<span></span></li>
-              </ul>
-            </div>
+            <h2 class="flex center-xs">Наши компетентности</h2>
+            <ul>
+              <li>Представительство в Палате по патентным спорам и арбитражных судах на всей территории РФ.<span></span></li>
+              <li>Разработка франчайзинговых и налоговых схем.<span></span></li>
+              <li>Лицензирование программного обеспечения. <span></span></li>
+              <li>Разработка лицензионных договоров и договоров об отчуждении исключительных прав. <span></span></li>
+              <li>Защита прав писателей, художников, музыкантов, дизайнеров, видеоблогеров и других контентмейкеров, авторов и исполнителей.<span></span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -228,6 +223,79 @@
           </div>
         </div>
       </section>
+      <section class="work">
+        <div class="container">
+          <div class="row center-xs">
+            <div class="col-xs-12">
+              <h2>Как это работает?</h2>
+            </div>
+          </div>
+          <div class="work__mobile">
+            <div class="row center-xs">
+              <div class="col-xs-8 start-xs"><span>Вы оставляете заявку на сайте.<p class="work__mobile--1">1</p></span><span>В течение 10 минут с вами связывается менеджер и согласует условия работы.<p>2</p></span><span>Мы заключаем с Вами договори бесплатно проводим патентный поиск.<p>3</p></span><span>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору.<p>4</p></span><span>В течение 2-х дней мы формируем пакет документов и подаем заявкуна регистрацию патента. Также потребуется оплатить госпошлину.<p>5</p></span><span>По истечение 1-1,5 месяцев мы получаем и передаем Вам письмо о прохождении формальной экспертизыи приоритетную справку.<p>6</p></span><span>По истечение 8-10 месяцев мы получаем и передаем Вам свидетельствоо регистрации товарного знака.<p>7</p></span></div>
+            </div>
+          </div>
+          <div class="work__text">
+            <div class="row center-md start-xs middle-xs">
+              <div class="col-md-3 col-xs-12">
+                <p class="work--padding">Вы оставляете заявку на сайте.</p>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <p>Мы заключаем с Вами договори бесплатно проводим патентный поиск.</p>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <p>В течение 2-х дней мы формируем пакет документов и подаем заявкуна регистрацию патента. Также потребуется оплатить госпошлину.</p>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <p class="work--padding1">По истечение 8-10 месяцев мы получаем и передаем Вам свидетельствоо регистрации товарного знака.</p>
+              </div>
+            </div>
+          </div>
+          <div class="work__stage flex between-xs">
+            <div class="work__stage__content">
+              <div class="work__stage__content__block"></div><span>Этап 1<i class="icon-angle-right"></i></span>
+              <p></p>
+            </div>
+            <div class="work__stage__content work__stage__content--border">
+              <div class="work__stage__content__block"></div><span>Этап 2<i class="icon-angle-right"></i></span>
+              <p></p>
+            </div>
+            <div class="work__stage__content">
+              <div class="work__stage__content__block"></div><span>Этап 3<i class="icon-angle-right"></i></span>
+              <p></p>
+            </div>
+            <div class="work__stage__content work__stage__content--border">
+              <div class="work__stage__content__block"></div><span>Этап 4<i class="icon-angle-right"></i></span>
+              <p></p>
+            </div>
+            <div class="work__stage__content">
+              <div class="work__stage__content__block"></div><span>Этап 5<i class="icon-angle-right"></i></span>
+              <p></p>
+            </div>
+            <div class="work__stage__content work__stage__content--border">
+              <div class="work__stage__content__block"></div><span>Этап 6<i class="icon-angle-right"></i></span>
+              <p></p>
+            </div>
+            <div class="work__stage__content">
+              <div class="work__stage__content__block"></div><span>Этап 7</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="work__text">
+            <div class="row center-md start-xs">
+              <div class="col-md-3 col-xs-12">
+                <p class="work--padding">В течение 10 минут с вами связывается менеджер и согласует условия работы.</p>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору.</p>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <p class="work--padding1">По истечение 1-1,5 месяцев мы получаем и передаем Вам письмо о прохождении формальной экспертизыи приоритетную справку.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="tariff">
         <div class="container">
           <div class="row center-xs">
@@ -294,85 +362,85 @@
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору.</p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору.</p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="http://via.placeholder.com/100x100" alt="">
+              <div class="swiper-slide"><img src="http://via.placeholder.com/130x90" alt="">
                 <div class="swiper-slide__block--top">
                   <p>Southern Company</p>
                   <p>В случае отсутствия препятствий для регистрации Вашего товарного знака, Вы оплачиваете стоимость услуг по договору. </p>
@@ -384,7 +452,7 @@
           <div class="swiper-button-prev"><img src="img/arrows.png" alt=""></div>
         </div>
       </section>
-      <section class="command">
+      <section id="ex5" class="command">
         <div class="container">
           <div class="row center-xs">
             <div class="col-xs-12">
@@ -405,7 +473,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section id="ex6" class="contacts">
         <div class="row">
           <div class="col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.109004627888!2d37.584330415440625!3d55.7392350005064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bac325bbba1%3A0x4fb8c4af9461672e!2zU3dlZGlzaCBUcmFkZSBDb3Vuc2lsICjQn9GA0LXQtNGB0YLQsNCy0LjRgtC10LvRjNGB0YLQstC-KQ!5e0!3m2!1sru!2sua!4v1513674232652"
               width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
@@ -438,7 +506,7 @@
         <p>На регистрацию товарного знака</p>
         <form><input type="text" placeholder="Ваше имя" required autocomplete="off" name="name"><input type="tel" required autocomplete="off" placeholder="Email / Телефон" name="phone"><input type="text" placeholder="Название торговой марки" required autocomplete="off"
             name="mark">
-          <div class="form__block__file"><input type="file" id="file" placeholder="Прикрепить логотип"><label for="file">Прикрепить логотип<i class="icon-Dwonload"></i></label></div><input type="submit" value="Отправить заявку">
+          <div class="form__block__file"><input type="file" name="description" id="file" placeholder="Прикрепить логотип"><label for="file">Прикрепить логотип<i class="icon-Dwonload"></i></label></div><input type="submit" value="Отправить заявку">
           <div class="form__block__checkbox flex start-xs"><input type="checkbox" id="checkbox"><label for="checkbox">Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями <a href="#">и политикой конфиденциальности</a></label></div>
         </form>
       </div>
