@@ -1,14 +1,14 @@
 $(function() {
 
 
-// Слайдер
-  var swiper = new Swiper('.swiper-container', {
+// Слайдер trust
+  var swiper = new Swiper('#container', {
   	slidesPerView: 5,
     slidesPerColumn: 2,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.next',
+      prevEl: '.prev',
     },
     breakpoints: {
 	    1024: {
@@ -20,6 +20,21 @@ $(function() {
 	      spaceBetween: 10
     	},
   	}
+  });
+  // Слайдер command
+  var swiper = new Swiper('#command', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '#next',
+      prevEl: '#prev',
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+    }
   });
 
 

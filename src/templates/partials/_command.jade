@@ -3,13 +3,29 @@ section.command#ex5
 		.row.center-xs
 			.col-xs-12
 				h2 Наша команда
-			.col-sm-6.col-xs-12
-				.command__block.command__block--padding
-					.command__block__name
+		.swiper-container#command
+			.swiper-wrapper
+				.swiper-slide
+					img(src="img/command-1.png", alt="")
+					.command__block.center-xs
 						p Мария Конар
 						span Основатель компании
-			.col-sm-6.col-xs-12
-				.command__block
-					.command__block__name
+				.swiper-slide
+					img(src="img/command-2.png", alt="")
+					.command__block.center-xs
 						p Николай Федоров
 						span Директор
+				.swiper-slide
+					img(src="img/command-1.png", alt="")
+					.command__block.center-xs
+						p Мария Конар
+						span Основатель компании
+				.swiper-slide
+					img(src="img/command-2.png", alt="")
+					.command__block.center-xs
+						p Николай Федоров
+						span Директор
+		.swiper-button-next#next
+			img(src="img/arrows.png", alt="")
+		.swiper-button-prev#prev
+			img(src="img/arrows.png", alt="")

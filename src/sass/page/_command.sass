@@ -1,36 +1,60 @@
 @import "color.sass" 
 .command
 	padding: 95px 0
+	position: relative
 	@media(max-width: 767px)
 		padding-bottom: 40px
 	h2
 		@include h2
 		padding-bottom: 40px
-	&__block
-		height: 400px
-		background-image: url("../img/command-2.png")
-		margin-left: 20px
-		position: relative
-		background-size: cover
-		@media(max-width: 767px)
-			margin: 40px 0
-		&--padding
-			margin-right: 20px
-			margin-left: 0
-			background-image: url("../img/command-1.png")
-			@media(max-width: 767px)
-				margin-right: 0
-		&__name
-			position: absolute
-			width: 100%
-			bottom: 0
-			background: rgba(69, 39, 159, 0.6)
-			padding: 20px 0
-			p
-				font-size: 20px
-				font-weight: 500
-				color: $white
-			span
-				font-size: 16px
-				color: $white
-				font-weight: 200
+	.swiper-container
+		width: 100%
+		height: 100%
+		.swiper-slide
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			img
+				width: 90%
+				@media(max-width: 900px)
+					width: 100%
+			.command__block
+				position: absolute
+				bottom: 0
+				height: 70px
+				width: 90%
+				background: rgba(69, 39, 159, 0.6)
+				display: flex
+				flex-direction: column
+				@media(max-width: 900px)
+					width: 100%
+				p
+					font-size: 20px
+					font-weight: 500
+					color: $white
+				span
+					font-size: 16px
+					color: $white
+					font-weight: 200
+	.swiper-container-android .swiper-slide, .swiper-wrapper
+		transform: none
+	.swiper-button-next
+		background: none
+		right: 30px
+		top: 57%
+		img
+			width: 35px
+			height: 60px
+			transform: rotate(180deg)
+		@media(max-width: 1024px)
+			display: none
+	.swiper-button-prev
+		background: none
+		left: 30px
+		top: 57%
+		img
+			width: 35px
+			height: 60px
+		@media(max-width: 1024px)
+			display: none
