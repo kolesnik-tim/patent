@@ -44,7 +44,7 @@
   will-change: transform
   transition: all ease 0.89s
   &.is-active
-    transform: translateX(110%)
+    transform: translateX(200%)
     position: fixed
 .slideout-open
   overflow: hidden
@@ -67,46 +67,7 @@
   background-color: rgba(0, 0, 0, 0.5)
   z-index: 999
 
-// #btn
-//   display: block
-//   width: 36px
-//   height: 20px
-//   padding-top: 20px
-//   cursor: pointer
-//   span
-//     &:after, &:before
-//       content: ""
-//       position: absolute
-//       left: 0
-//       top: -10px
-//     &:after
-//       top: 10px
-//       width: 36px
-//       height: 5px
-//       background-color: $gray
-//       transition: all 0.3s
-//       backface-visibility: hidden
-//     position: relative
-//     display: block
-//     width: 36px
-//     height: 5px
-//     background-color: $gray
-//     transition: all 0.3s
-//     backface-visibility: hidden
-//     &:before
-//       width: 36px
-//       height: 5px
-//       background-color: $gray
-//       transition: all 0.3s
-//       backface-visibility: hidden
-//   &.on span
-//     background-color: transparent
-//     &:before
-//       transform: rotate(45deg) translate(6px, 5px)
-//     &:after
-//       transform: rotate(-45deg) translate(9px, -8px)
-// #btn.on
-//   display: none
+
 .menu-close
   position: absolute
   top: 20px
